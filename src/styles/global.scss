@@ -1,0 +1,125 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --gray-100: #e6e6e6;
+  --gray-200: #e0e0e0;
+  --gray-300: #d1d1d1;
+  --gray-400: #a2a2a2;
+  --gray-500: #969696;
+  --gray-600: #342e37;
+  --gray-700: #2b2b2b;
+  --gray-800: #252323;
+  --gray-900: #191716;
+
+  --purple-400: #a682ff;
+  --purple-500: #642ca9;
+
+  --blue-300: #55c1ff;
+  --blue-400: #5887ff;
+  --blue-500: #715aff;
+
+  --red-300: #d64045;
+  --red-400: #C1292E;
+  --red-500: #AD343E;
+
+  --green-200: #23CE6B;
+  --green-300: #26C485;
+  --green-400: #679436;
+  --green-500: #337357;
+
+  --yellow-100: #FFE4C4;
+  --yellow-200: #FFF275;
+  --yellow-300: #FFDF64;
+  --yellow-400: #E0BE36;
+
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --border-radius: 0.25rem;
+  --box-shadow: 0.1rem 0.1rem 0.75rem rgba(0, 0, 0, 0.3);
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--blue-500);
+}
+
+body {
+  background-color: var(--gray-700);
+  color: var(--gray-400);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+
+  @media (min-width: 750px) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+
+  @media (min-width: 750px) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+
+  @media (min-width: 750px) {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: 0.875rem;
+
+  @media (min-width: 750px) {
+    font-size: 1rem;
+  }
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--blue-500);
+  color: var(--yellow-100);
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+
+  &:hover {
+    background-color: var(--blue-400);
+  }
+}
